@@ -1,0 +1,6 @@
+{
+  "start": "index.js",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
