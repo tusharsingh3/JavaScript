@@ -221,19 +221,95 @@ let y = 4; // y contains the value 4
 
 // Question 3
 
-// weightComparison
-const tusharWeight = 90;
-const pawanWeight = 79;
+// // weightComparison
+// const tusharWeight = 90;
+// const pawanWeight = 79;
 
-const weightComparisons = (tusharWeight > pawanWeight);
-console.log(weightComparisons);
-//heightComparison
-const tusharHeight = 6;
-const pawanHeight = 5.4;
-const heightComparison = (tusharHeight > pawanHeight);
-console.log(heightComparison);
-// pwdMatch
-const test1 = 'pawan@123';
-const test2 = 'Pawan@123';
-const pwdMatch = (test1 === test2);
-console.log(pwdMatch)
+// const weightComparisons = (tusharWeight > pawanWeight);
+// console.log(weightComparisons);
+// //heightComparison
+// const tusharHeight = 6;
+// const pawanHeight = 5.4;
+// const heightComparison = (tusharHeight > pawanHeight);
+// console.log(heightComparison);
+// // pwdMatch
+// const test1 = 'pawan@123';
+// const test2 = 'Pawan@123';
+// const pwdMatch = (test1 === test2);
+// console.log(pwdMatch)
+
+// ++++++++++++++++++++++++++++++++++++++      STRINGS          ++++++++++++++++++++++++++++++++++++++++++++++++++++
+// const string = "The revolution will not be televised.";
+// console.log(string);
+
+// const badString = string;
+// console.log(badString);
+
+
+// const sgl = 'Single quotes.';
+// const dbl = "Double quotes";
+// console.log(sgl);
+// console.log(dbl);
+
+
+// // const badQuotes = 'What on earth?";
+// // console.log(badQuotes);
+
+
+
+// const sglDbl = 'Would you eat a "fish supper"?';
+// const dblSgl = "I'm feeling blue.";
+// console.log(sglDbl);
+// console.log(dblSgl);
+
+
+// const bigmouth = 'I\'ve got no right to take my place…';
+// console.log(bigmouth);
+
+
+// const test = ' tastedada \v teaj';
+// const test1 = ' tastedada \f teaj';
+// // console.log(test);
+// console.log(test1);
+
+
+// const name = "Chris";
+// const greeting = `Hello, ${name}`;
+// console.log(greeting); // "Hello, Chris"
+
+
+
+// const one = "Hello, ";
+// const two = "how are you?";
+// const joined = `${one}${two}`;
+// console.log(joined); // "Hello, how are you?"
+
+
+// const greeting = "Hello";
+// const name = "Chris";
+// console.log(greeting + ", " + name); // "Hello, Chris"
+
+
+// const name = "Front ";
+// const number = 242;
+// console.log(`${name}${number}`); // "Front 242"
+
+
+// const myString = "123";
+// const myNum = Number(myString);
+// console.log(typeof myNum);
+// console.log(myString);
+
+// const myString1 = "1223";
+// const val = parseInt(myString1)
+// console.log(typeof val);
+// console.log(val);
+
+console.log(+'32');
+
+// +'0xF'
+
+const myNum2 = 123;
+const myString2 = myNum2.toString();
+console.log(typeof myString2);
+console.log(myString2);
