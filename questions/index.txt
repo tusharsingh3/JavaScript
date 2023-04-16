@@ -107,3 +107,63 @@ Some simple equalityrules:
 If either value (aka side) in a comparison could be the true or false value, avoid == and use ===.
 If either value in a comparison could be of these specific values (0, "", or [] -- empty array), avoid == and use ===.
 In all other cases, you're safe to use ==. Not only is it safe, but in many cases it simplifies your code in a way that improves readability.
+
+Q6:   Explain what is Binary Search? IMPORTANT : Need Study Deep.
+
+Binary search is a search algorithm that is designed to search an element in a sorted array. This binary search is also a well-known example of the "divide and conquer approach"
+
+Nowadays, in the domain of computer science, searching for an element is one of the most frequently used tasks. So due to this frequently used of such things, we have to make it more efficient, for which there are lots of data structures and algorithms exist.
+
+So Binary Search here is also one of the efficient algorithms which are used in searching an element, but a matter of fact here is that the array should be sorted before applying the binary search over it. Binary search is one of the most widely used search algorithms, and it can be used in almost any real-world application.
+
+Binary search works in a divide and conquers way. It divides the array into two halves and performs the searching of the required target value on those halves instead of searching an element on each index, like on index 0 first, then on 1st index, and so on.
+
+Binary Search is a simple, user-friendly, and efficient search algorithm. The only fact is that this algorithm only works with sorted arrays, so we may require to sort our array before performing the binary search on an array.
+
+Now let's understand the implementation of binary search in javascript.
+
+https://www.scaler.com/topics/binary-search-in-javascript
+
+
+Binary Search is a searching technique which works on the Divide and Conquer approach.
+2. It is used to search for any element in a sorted array. 
+3. Compared with linear, binary search is much faster with a Time Complexity of O(logN), whereas linear search works in O(N) time complexity.
+    1. BASE CONDITION: If starting index is greater than ending index return false.
+    2. Compute the middle index.
+    3. Compare the middle element with number x. If equal return true.
+    4. If greater, call the same function with ending index = middle-1 and repeat step 1.
+    5. If smaller, call the same function with starting index = middle+1 and repeat step 1.
+
+    [1, 2, 3, 4, 5, 6, 7, 8, ,9 10]  // 5
+
+
+
+Q7. Explain what is Linear (Sequential) Search and when may we use one?
+
+1. A linear search or sequential search is a method for finding an element within a list.
+2. It sequentially checks each element of the list until a match is found or the whole list has been searched.
+3. check each element with searched key, if founded then returns true otherwise false.
+
+
+
+Q 8. Explain Values and Types in JavaScript?  
+
+JavaScript has typed values, not typed variables. The following built-in types are available:
+string
+number
+boolean
+null and undefined
+object
+Symbol
+
+Q9:   What is let keyword in JavaScript?  
+
+let allows you to declare variables that are limited to the scope of a block statement, or expression on which it is used, unlike the var keyword,
+ which declares a variable globally, or locally to an entire function regardless of block scope
+
+
+Q10:   Explain the same-origin policy with regards to JavaScript?
+
+The same-origin policy prevents JavaScript from making requests across domain boundaries.
+ An origin is defined as a combination of URI scheme, hostname, and port number. 
+ This policy prevents a malicious script on one page from obtaining access to sensitive data on another web page through that page's Document Object Model.
