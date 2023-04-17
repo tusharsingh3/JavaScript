@@ -305,11 +305,86 @@ let y = 4; // y contains the value 4
 // console.log(typeof val);
 // console.log(val);
 
-console.log(+'32');
+// console.log(+'32');
 
-// +'0xF'
+// // +'0xF'
 
-const myNum2 = 123;
-const myString2 = myNum2.toString();
-console.log(typeof myString2);
-console.log(myString2);
+// const myNum2 = 123;
+// const myString2 = myNum2.toString();
+// console.log(typeof myString2);
+// console.log(myString2);
+
+
+// const string = 'This is my string';
+
+// console.log(string.length);
+
+// const t = Number.MAX_SAFE_INTEGER + 1;
+// const h = Number.MAX_SAFE_INTEGER + 2;
+
+// console.log(Number.MAX_SAFE_INTEGER);
+// Expected output: 9007199254740991
+
+//Since length counts code units instead of characters, if you want to get the number of characters, you can first split the string with its iterator, which iterates by characters:
+
+// function getCharacterLength(str) {
+//     // The string iterator that is used here iterates over characters,
+//     // not mere code units
+//     return [...str].length;
+// }
+
+// console.log(getCharacterLength("A\uD87E\uDC04Z")); // 3
+
+// const test = "A\uD87E\uDC04Z";
+// console.log(test); // 3
+
+
+// Iteration using for...of loop
+// Note that you seldom need to call this method directly. The existence of the @@iterator method makes strings iterable, and iterating syntaxes like the for...of loop automatically calls this method to obtain the iterator to loop over.
+
+// const str = "A\uD835\uDC68B\uD835\uDC69C\uD835\uDC6A";
+
+// for (const v of str) {
+//     console.log(v);
+// }
+
+// Manually hand-rolling the iterator
+// You may still manually call the next() method of the returned iterator object to achieve maximum control over the iteration process.
+
+
+
+// const str = "A\uD835\uDC68";
+
+// const strIter = str[Symbol.iterator]();
+
+// console.log(strIter.next().value); // "A"
+// console.log(strIter.next().value); // "\uD835\uDC68"
+
+
+
+
+// const z = "Mozilla";
+// const empty = "";
+
+// console.log(`${z} is ${x.length} code units long`);
+// // Mozilla is 7 code units long
+
+// console.log(`The empty string has a length of ${empty.length}`);
+// // The empty string has a length of 0
+
+// Strings with length not equal to the number of characters
+
+const emoji = "😄";
+console.log(emoji.length); // 2
+const adlam = "𞤲𞥋𞤣𞤫";
+console.log(adlam.length); // 8
+const formula = "∀𝑥∈ℝ,𝑥²≥0";
+console.log(formula.length); // 11
+
+// Because string is a primitive, attempting to assign a value to a string's length property has no observable effect, and will throw in strict mode.
+
+const myString = "bluebells";
+
+myString.length = 4;
+console.log(myString); // "bluebells"
+console.log(myString.length); // 9
