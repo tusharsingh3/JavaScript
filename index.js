@@ -374,17 +374,39 @@ let y = 4; // y contains the value 4
 
 // Strings with length not equal to the number of characters
 
-const emoji = "😄";
-console.log(emoji.length); // 2
-const adlam = "𞤲𞥋𞤣𞤫";
-console.log(adlam.length); // 8
-const formula = "∀𝑥∈ℝ,𝑥²≥0";
-console.log(formula.length); // 11
+// const emoji = "😄";
+// console.log(emoji.length); // 2
+// const adlam = "𞤲𞥋𞤣𞤫";
+// console.log(adlam.length); // 8
+// const formula = "∀𝑥∈ℝ,𝑥²≥0";
+// console.log(formula.length); // 11
 
-// Because string is a primitive, attempting to assign a value to a string's length property has no observable effect, and will throw in strict mode.
+// // Because string is a primitive, attempting to assign a value to a string's length property has no observable effect, and will throw in strict mode.
 
-const myString = "bluebells";
+// const myString = "bluebells";
 
-myString.length = 4;
-console.log(myString); // "bluebells"
-console.log(myString.length); // 9
+// myString.length = 4;
+// console.log(myString); // "bluebells"
+// console.log(myString.length); // 9
+
+// const greetings = ['MAN675847583748sjt567654;Manchester Piccadilly',
+//     'GNF576746573fhdg4737dh4;Greenfield',
+//     'LIV5hg65hd737456236dch46dg4;Liverpool Lime Street',
+//     'SYB4f65hf75f736463;Stalybridge',
+//     'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'];
+// const names = []
+// greetings.map((ele) => { const name = ele.split(';'); names.push(`${name[0].substring(0, 3)}: ${name[1]}`) })
+
+// console.log(names)
+
+const dataNames = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+const lowerCaseData = []
+
+dataNames.map((ele, index) => {
+    let lowerCaseString = ele.toLowerCase()
+    const firstCharacter = lowerCaseString.charAt(0)
+    lowerCaseString = lowerCaseString.replace(firstCharacter, firstCharacter.toUpperCase())
+    lowerCaseData.push(lowerCaseString)
+})
+
+console.log(lowerCaseData);
