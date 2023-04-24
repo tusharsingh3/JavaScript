@@ -391,95 +391,194 @@
 // const str = "A\uD835\uDC68";
 // console.log(str)
 
-const browserType = 'mozilla test, value ';
-browserType.length;
-console.log(browserType[0]);
-console.log(browserType[browserType.length - 1]);
+// const browserType = 'mozilla test, value ';
+// browserType.length;
+// console.log(browserType[0]);
+// console.log(browserType[browserType.length - 1]);
 
 
-if (browserType.includes('test')) {
-    console.log('Found zilla!');
-} else {
-    console.log('No zilla here!');
-}
+// if (browserType.includes('test')) {
+//     console.log('Found zilla!');
+// } else {
+//     console.log('No zilla here!');
+// }
 
-if (browserType.startsWith('zilla')) {
-    console.log('Found zilla!');
-} else {
-    console.log('No zilla here!');
-}
+// if (browserType.startsWith('zilla')) {
+//     console.log('Found zilla!');
+// } else {
+//     console.log('No zilla here!');
+// }
 
-if (browserType.endsWith('zilla')) {
-    console.log('Found zilla!');
-} else {
-    console.log('No zilla here!');
-}
+// if (browserType.endsWith('zilla')) {
+//     console.log('Found zilla!');
+// } else {
+//     console.log('No zilla here!');
+// }
 
-const tagline = 'MDN - Resources for developers, by developers';
-console.log(tagline.indexOf('developers')); // 20
+// const tagline = 'MDN - Resources for developers, by developers';
+// console.log(tagline.indexOf('developers')); // 20
 
-console.log(tagline.indexOf('x')); // -1
+// console.log(tagline.indexOf('x')); // -1
 
-const firstOccurrence = tagline.indexOf('developers');
-const secondOccurrence = tagline.indexOf('developers', firstOccurrence + 1);
+// const firstOccurrence = tagline.indexOf('developers');
+// const secondOccurrence = tagline.indexOf('developers', firstOccurrence + 1);
 
-console.log(firstOccurrence); // 20
-console.log(secondOccurrence); //
+// console.log(firstOccurrence); // 20
+// console.log(secondOccurrence); //
 
-const browserType1 = 'mozilla';
-console.log(browserType1.slice(1, 4)); // "ozi"
+// const browserType1 = 'mozilla';
+// console.log(browserType1.slice(1, 4)); // "ozi"
 
-// The character at index 1 is "o", and the character at index 4 is "l". So we extract all characters starting at "o" and ending just before "l", giving us "ozi".
+// // The character at index 1 is "o", and the character at index 4 is "l". So we extract all characters starting at "o" and ending just before "l", giving us "ozi".
 
-console.log(browserType.slice(2));
+// console.log(browserType.slice(2));
 
-const radData = 'My NaMe Is MuD';
-console.log(radData.toLowerCase());
-console.log(radData.toUpperCase());
-console.log(radData.toLocaleLowerCase());
-
-
-const browserType2 = 'mozilla';
-const updated = browserType2.replace('moz', 'van');
-
-console.log(updated);      // "vanilla"
-console.log(browserType2);
+// const radData = 'My NaMe Is MuD';
+// console.log(radData.toLowerCase());
+// console.log(radData.toUpperCase());
+// console.log(radData.toLocaleLowerCase());
 
 
-let quote = 'To be or not to be';
-quote = quote.replaceAll('be', 'code');
+// const browserType2 = 'mozilla';
+// const updated = browserType2.replace('moz', 'van');
 
-console.log(quote);  // "To code or not to code"
+// console.log(updated);      // "vanilla"
+// console.log(browserType2);
 
-const val = 'Merry Christmas my love'
-console.log(val.includes('Christmas')); //
 
-const city = ['lonDon',
-    'ManCHESTer',
-    'BiRmiNGHAM',
-    'liVERpoOL'];
+// let quote = 'To be or not to be';
+// quote = quote.replaceAll('be', 'code');
 
-for (const s of city) {
-    const temp = s.toLowerCase();
-    // console.log(temp);
-    const firstOccurrence = temp.slice(0, 1);
-    // console.log(firstOccurrence);
-    const upperLetter = firstOccurrence.replace(firstOccurrence, firstOccurrence.toUpperCase());
-    // console.log(upperLetter);
-    const result = upperLetter;
-    console.log(result);
-}
+// console.log(quote);  // "To code or not to code"s
 
-const stations = ['MAN675847583748sjt567654;Manchester Piccadilly',
-    'GNF576746573fhdg4737dh4;Greenfield',
-    'LIV5hg65hd737456236dch46dg4;Liverpool Lime Street',
-    'SYB4f65hf75f736463;Stalybridge',
-    'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'];
+// const val = 'Merry Christmas my love'
+// console.log(val.includes('Christmas')); //
 
-for (const station of stations) {
-    const stationCode = station.slice(0, 3);
-    const semiColonIndex = station.indexOf(';');
-    const name = station.slice(semiColonIndex + 1);
-    const result = `${stationCode}: ${name}`;
-    console.log(result);
-}
+// const city = ['lonDon',
+//     'ManCHESTer',
+//     'BiRmiNGHAM',
+//     'liVERpoOL'];
+
+// for (const s of city) {
+//     const temp = s.toLowerCase();
+//     // console.log(temp);
+//     const firstOccurrence = temp.slice(0, 1);
+//     // console.log(firstOccurrence);
+//     const upperLetter = firstOccurrence.replace(firstOccurrence, firstOccurrence.toUpperCase());
+//     // console.log(upperLetter);
+//     const result = upperLetter;
+//     console.log(result);
+// }
+
+// const stations = ['MAN675847583748sjt567654;Manchester Piccadilly',
+//     'GNF576746573fhdg4737dh4;Greenfield',
+//     'LIV5hg65hd737456236dch46dg4;Liverpool Lime Street',
+//     'SYB4f65hf75f736463;Stalybridge',
+//     'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'];
+
+// for (const station of stations) {
+//     const stationCode = station.slice(0, 3);
+//     const semiColonIndex = station.indexOf(';');
+//     const name = station.slice(semiColonIndex + 1);
+//     const result = `${stationCode}: ${name}`;
+//     console.log(result);
+// }
+
+// const shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];
+// console.log(shopping);
+
+
+// const sequence = [1, 1, 2, 3, 5, 8, 13];
+// const random = ['tree', 795, [0, 1, 2]];
+
+// console.log(sequence);
+// console.log(random);
+
+// const shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles', 'rice'];
+// console.log(shopping.length);  // 5
+
+// const shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];
+// console.log(shopping[2]);
+// // returns "bread"const shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];
+// const shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];
+// shopping[10] = [1, 'assd'];
+// console.log(shopping);
+// // shopping will now return [ "tahini", "milk", "cheese", "hummus", "noodles" ]
+
+// const random = ['tree', 795, [0, 1, 2]];
+// random[2][2];
+// console.log(random[2][2]);
+
+// const birds = ['Parrot', 'Falcon', 'Owl'];
+// console.log(birds.indexOf('Owl'));   //  2
+// console.log(birds.indexOf('Rabbit')); // -1
+
+
+// const cities = ['Manchester', 'Liverpool'];
+// cities.push('Cardiff');
+// console.log(cities);      // [ "Manchester", "Liverpool", "Cardiff" ]
+// cities.push('Bradford', 'Brighton');
+// console.log(cities);      // [ "Manchester", "Liverpool", "Cardiff", "Bradford", "Brighton" ]
+
+
+// const cities = ['Manchester', 'Liverpool'];
+// cities.unshift('Edinburgh');
+// console.log(cities);     // [ "Edinburgh", "Manchester", "Liverpool" ]
+
+
+// const cities = ['Manchester', 'Liverpool'];
+// cities.pop();
+// console.log(cities);     // [ "Manchester" ]
+
+
+// const cities = ['Manchester', 'Liverpool'];
+// const removedCity = cities.pop();
+// console.log(removedCity);   // "Liverpool"
+
+
+// const cities = ['Manchester', 'Liverpool'];
+// cities.shift();
+// console.log(cities);     // [ "Liverpool" ]
+
+// const cities = ['Manchester', 'Liverpool', 'Edinburgh', 'Carlisle'];
+// const index = cities.indexOf('Manchester');
+// if (index !== -1) {
+//     cities.splice(index, 20);
+// }
+// console.log(cities);     // [ "Manchester", "Edinburgh", "Carlisle" ]
+
+
+// const birds = ['Parrot', 'Falcon', 'Owl'];
+
+// for (const bird of birds) {
+//     console.log(bird);
+// }
+
+
+// function double(number) {
+//     return number * 2;
+// }
+// const numbers = [5, 2, 7, 6];
+// const doubled = numbers.map(double);
+// console.log(doubled);  // [ 10, 4, 14, 12 ]
+
+// function isLong(city) {
+//     return city.length > 8;
+// }
+// const cities = ['London', 'Liverpool', 'Totnes', 'Edinburgh'];
+// const longer = cities.filter(isLong);
+// console.log(longer);  // [ "Liverpool", "Edinburgh" ]
+
+
+// const data = 'Manchester,London,Liverpool,Birmingham,Leeds,Carlisle';
+// const cities = data.split(',');
+// console.log(cities);
+// console.log(cities.length);
+// console.log(cities[0]); // the first item in the array
+// console.log(cities[1]); // the second item in the array
+// console.log(cities[cities.length - 1]); // the last item in the array
+// const commaSeparated = cities.join(',');
+// console.log(commaSeparated);
+
+// const dogNames = ['Rocket', 'Flash', 'Bella', 'Slugger'];
+// console.log(dogNames.toString()); // Rocket,Flash,Bella,Slugger
