@@ -582,3 +582,22 @@
 
 // const dogNames = ['Rocket', 'Flash', 'Bella', 'Slugger'];
 // console.log(dogNames.toString()); // Rocket,Flash,Bella,Slugger
+
+// const products = ['Underpants:6.99', 'Socks:5.99', 'T-shirt:14.99', 'Trousers:31.99', 'Shoes:23.99'];
+// const productNames = [];
+// const productPrices = [];
+// let total = 0;
+
+// for (const productWithPrice of products) {
+//     const product = productWithPrice.split(':')[0];
+//     const price = Number(productWithPrice.split(":")[1]);
+//     productNames.push(product);
+//     productPrices.push(price);
+//     total += price;
+//     console.log(`${product} - ${price}`);
+
+// }
+
+// console.log(productNames);
+// console.log(productPrices);
+// console.log(total);
